@@ -28,7 +28,6 @@
         {{ link.full_short_link === selectedLink ? 'copied' : 'copy' }}
       </button>
     </div>
-    {type:
   </div>
 </template>
 
