@@ -28,15 +28,16 @@
         {{ link.full_short_link === selectedLink ? 'copied' : 'copy' }}
       </button>
     </div>
+    {type:
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    link: Object,
-    selectedLink: String,
-    copyText: Function,
+    link: { type: Object, default: () => {} },
+    selectedLink: { type: String, default: '' },
+    copyText: { type: Function, default: () => {} },
   },
 }
 </script>

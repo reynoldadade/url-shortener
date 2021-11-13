@@ -59,11 +59,11 @@ export default {
     shortenedLinks,
   },
   props: {
-    shortenURL: Function,
-    loading: Boolean,
-    links: Array,
-    selectedLink: String,
-    copyText: Function,
+    shortenURL: { type: Function, default: () => {} },
+    loading: { type: Boolean, default: false },
+    links: { type: Array, default: () => [] },
+    selectedLink: { type: String, default: '' },
+    copyText: { type: Function, default: () => {} },
   },
   data() {
     return {
